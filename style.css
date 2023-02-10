@@ -15,6 +15,7 @@
     --standard-green: #005247;
     --white-dim: rgba(255, 255, 255, 0.80);
     --white-color: #fff;
+    --primary-transparent: #25262710;
     --italic-font:'Libre Baskerville', serif;
 }
 
@@ -39,13 +40,14 @@ body em {
     vertical-align: text-top;
 }
 
-.topbar .topbarContent .phoneNumber span {
+.topbar .topbarContent .phoneNumber span a {
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
     text-transform: uppercase;
     display: inline-block;
     padding-left: 5px;
+    text-decoration: none; 
 }
 
 .topbar .topbarContent .profesinalLink img {
@@ -54,6 +56,7 @@ body em {
     object-fit: contain;
     display: inline-block;
     margin-left: 40px;
+    transition: .15s linear;
 }
 
 .banner {
@@ -62,8 +65,9 @@ body em {
 .banner .imgContainer {
     background: var(--secondary-color);
     padding: 0 !important;
+    position: relative;
 }
-.banner .imgContainer img {
+.banner .imgContainer img.profileImg {
     width: 100%;
     height: 463px;
     position: relative;
@@ -74,14 +78,22 @@ body em {
 }
 .banner .imgContainer .socialIcon {
     background: var(--secondary-color);
-    padding: 48px 0;
+    width: 100%;
+    padding: 50px 0;
     position: absolute;
-    top:0;
+    top:-122px;
 }
 .banner .imgContainer .socialIcon img {
     width: 24px;
     height: 24px;
-    object-fit: contain
+    object-fit: contain;
+    display:block;
+    margin: 0 15px;
+    transition: .15s linear;
+}
+.banner .imgContainer .socialIcon img:hover,
+.topbar .topbarContent .profesinalLink img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -126,4 +138,113 @@ body em {
 .hero .heroContent p a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+
+
+
+.workSection .workHeader {
+    padding: 60px 0;
+    background-color: var(--primary-transparent);
+}
+.workSection .workHeader img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+.workSection .workHeader h4 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left:10px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.workSection .workContainer {
+    padding: 60px 0;
+}
+.workSection .workContainer .workDetails h3{
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.workSection .workContainer .workDetails h3 span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.workSection .workContainer .workDetails p{
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 890px;
+}
+
+.workSection .workContainer .workDetails h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    padding-top: 50px;
+}
+.workSection .workContainer .work {
+    padding-top: 60px;
+}
+.workSection .workContainer .work img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+    .topbar .topbarContent {
+        padding-left: 0;
+        padding: 0 20px;
+    }
+    .banner .imgContainer img.profileImg {
+        width: 100%;
+        height: 463px;
+        position: relative;
+        bottom: 0;
+    }
+    .banner .imgContainer .socialIcon {
+        padding: 50px 0;
+        position: static;
+    }
+    .banner .bannerContent {
+        padding: 60px 20px;
+    }
+    .hero .heroContent {
+        padding: 35px 20px;
+        display: block !important;
+        text-align:center;
+    }
+    .hero .heroContent p {
+        margin: 10px 0;
+    }
+    .workSection .workHeader,
+    .workSection .workContainer {
+        padding: 40px 20px;
+    }
+    .workSection .workContainer .workDetails h4 {
+        padding-top: 20px;
+    }
+    .workSection .workContainer .work {
+        padding-top: 40px;
+    }
+
+    /* font family */
+    .banner .bannerContent h2 {
+        font-size: 48px;
+    }
+    .banner .bannerContent p {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .workSection .workHeader h4 {
+        font-size: 32px;
+    }
 }
