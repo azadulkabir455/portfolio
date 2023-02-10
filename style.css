@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #252627;
+    --secondary-color: #FE9800;
+    --standard-green: #005247;
+    --white-dim: rgba(255, 255, 255, 0.80);
+    --white-color: #fff;
+    --italic-font:'Libre Baskerville', serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+body em {
+    font-family: var(--italic-font);
+}
+
+.topbar {
+    padding: 48px 0;
+}
+
+.topbar .topbarContent {
+    padding-left: 65px;
+}
+
+.topbar .topbarContent .phoneNumber img {
+    width: 18px;
+    height: auto;
+    vertical-align: text-top;
+}
+
+.topbar .topbarContent .phoneNumber span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.topbar .topbarContent .profesinalLink img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.banner {
+    background: var(--standard-green);
+}
+.banner .imgContainer {
+    background: var(--secondary-color);
+    padding: 0 !important;
+}
+.banner .imgContainer img {
+    width: 100%;
+    height: 463px;
+    position: relative;
+    bottom: -110px;
+    background: var(--secondary-color);
+    object-fit: cover;
+    object-position: top;
+}
+.banner .imgContainer .socialIcon {
+    background: var(--secondary-color);
+    padding: 48px 0;
+    position: absolute;
+    top:0;
+}
+.banner .imgContainer .socialIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain
+}
+
+
+
+.banner .bannerContent {
+    padding: 87px 0 83px 40px;
+}
+
+.banner .bannerContent h2 {
+    font-size: 55px;
+    font-weight: 200;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+.banner .bannerContent h2 strong {
+    font-weight: 600;
+}
+
+.banner .bannerContent p {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 47px;
+    color: var(--white-dim);
+    max-width: 700px;
+}
+
+
+.hero {
+    background-image: linear-gradient(to right,var(--standard-green) 50%, transparent 0)
+}
+.hero .heroContent {
+    padding: 43px 0 43px 60px;
+    background-color: var(--white-color);
+}
+.hero .heroContent p,
+.hero .heroContent p a {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--primary-color);
+}
+.hero .heroContent p a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
