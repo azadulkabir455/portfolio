@@ -17,6 +17,7 @@
     --white-color: #fff;
     --link-blue: #087096;
     --dark-blue: #1B1464;
+    --purple-color: #6438BC;
     --primary-transparent: #25262710;
     --italic-font: 'Libre Baskerville', serif;
 }
@@ -155,18 +156,18 @@ body em {
 
 
 
-.workSection .workHeader {
+.workHeader {
     padding: 60px 0;
     background-color: var(--primary-transparent);
 }
 
-.workSection .workHeader img {
+.workHeader img {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-.workSection .workHeader h4 {
+.workHeader h4 {
     font-weight: 500;
     font-size: 36px;
     line-height: 36px;
@@ -176,7 +177,7 @@ body em {
     margin: 0;
 }
 
-.workSection .workHeader a {
+.workHeader a {
     display: inline-block;
     font-size: 14px;
     line-height: 16px;
@@ -186,10 +187,12 @@ body em {
     transition: .15s linear;
 }
 
-.workSection .workHeader a:hover {
+.workHeader a:hover {
     transform: scale(1.1);
 }
-
+.workSection .borderTop {
+    border-top: 1px solid rgba(37, 38, 39, 0.12);
+}
 .workSection .workContainer {
     padding: 60px 0;
 }
@@ -199,7 +202,7 @@ body em {
     background-color: rgba(37, 38, 39, 0.12);
     width: 1px;
     height: 84px;
-    right: 25px;
+    right: 0;
     top: 30px;
 }
 
@@ -244,7 +247,7 @@ body em {
 }
 
 .workSection .workContainer .work {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .workSection .workContainer .work .imgContaner {
@@ -262,7 +265,7 @@ body em {
 }
 
 .workSection .workContainer .work .imgContaner a {
-    display: inline-block;
+    display: block;
     padding: 16px 30px;
     font-size: 14px;
     line-height: 16px;
@@ -270,6 +273,9 @@ body em {
     color: var(--link-blue);
     text-decoration: none;
     transition: .15s linear;
+    border-radius: 0 0 24px 24px;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(37, 38, 39, 0.12);
 }
 
 .workSection .workContainer .work .imgContaner a:hover {
@@ -297,8 +303,8 @@ body em {
 }
 
 .workSection .workContainer .work ul li:before {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     position: absolute;
     left: -47px;
@@ -306,8 +312,19 @@ body em {
     transform: translateY(-60%);
 }
 
+
+/* Star Agency Css */
+
 .workSection .workContainer .agency.work ul li:before {
     content: url(./icons/lightBlueTic.svg);
+}
+
+.workSection .workContainer .earn.work ul li:before {
+    content: url(./icons/purpleTic.svg);
+}
+
+.workSection .workContainer .pypepro.work ul li:before {
+    content: url(./icons/blueTic.svg);
 }
 
 .workSection .workContainer .agency.work .features {
@@ -374,21 +391,143 @@ body em {
     color: var(--link-blue);
     font-weight: 700;
 }
-.workSection .workContainer .agency.work .imgContainer{
-    background-color: var(--dark-blue);
-    margin-top:60px;
+
+/* End Agency Css */
+
+/* Start App Css */
+
+/* End App Css */
+/* Start Skitto */
+.workSection .workContainer .skitto.agency.work ul li:before {
+    content: url(./icons/purpleTic.svg);
 }
+.workSection .workContainer .skitto.agency.work .features {
+    background-color: var(--purple-color);
+}
+.workSection .workContainer .skitto.agency.work .features .featureContent .featureList p:nth-child(2) span {
+    color: #FFF300;
+}
+.workSection .workContainer .skitto.agency.work .imgContainer {
+    padding: 0;
+}
+.workSection .workContainer .skitto.agency.work .imgContainer {
+    background-color: #EFF2F5;
+    max-height: 1120px;
+    overflow: hidden;
+
+}
+.workSection .workContainer .skitto.agency.work .imgContainer img{
+    filter: drop-shadow(0px 0px 128px rgba(128, 128, 128, 0.2));
+ }
+/* End Skitto */
+/* start Bd tickets css */
+.workSection .workContainer .bd.work {
+    padding: 0;
+}
+.workSection .workContainer .bd.skitto.agency.work .imgContainer {
+    max-height: 1880px;
+}
+/* end Bd tickets css */
+/* Start Earn Css */
+
+.workSection .workContainer .earn.work .earnFeatures {
+    background-color: var(--purple-color);
+    padding: 37px 20px;
+    border-radius: 24px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures .rightBorder,.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.workSection .workContainer .earn.work .earnFeatures h3 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-dim);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* End earn Css */
+
+/* Start pypproCss */
+.workSection .workContainer .pypepro.work h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.workSection .workContainer .pypepro.work .pypproFeatures {
+    background-color: var(--link-blue);
+    padding: 50px 20px;
+    border-radius: 24px;
+}
+.workSection .workContainer .pypepro.work .pypproFeatures h4{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white-color)
+}
+.workSection .workContainer .pypepro.work .pypproFeatures p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-dim)
+}
+
+/* End Pyprpo Css */
+
+.workSection .workContainer .agency.work .imgContainer {
+    background-color: var(--dark-blue);
+    margin-top: 60px;
+}
+
+.workSection .workContainer .earn.work .imgContainer {
+    background-color: var(--purple-color);
+    margin-top: 60px;
+}
+
+.workSection .workContainer .pypepro.work .imgContainer {
+    background-color: var(--dark-blue);
+    margin-top: 60px;
+}
+
 .workSection .workContainer .work .imgContainer {
     padding: 30px;
 }
+
 .workSection .workContainer .work .imgContainer .imgs img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 2px;
 
 }
+
 .workSection .workContainer .work .imgContainer .imgs img:not(:last-child) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -449,8 +588,12 @@ body em {
     .workSection .workHeader h4 {
         font-size: 32px;
     }
+
     .workSection .workContainer .workDetails .link {
-        float:none;
+        float: none;
         padding-top: 20px !important;
+    }
+    .workSection .workContainer .skitto.agency.work .imgContainer {
+        max-height: 1600px;
     }
 }
