@@ -123,11 +123,10 @@ body em {
 }
 
 .banner .bannerContent p {
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 46px;
     color: var(--white-dim);
-    max-width: 700px;
 }
 
 
@@ -190,9 +189,11 @@ body em {
 .workHeader a:hover {
     transform: scale(1.1);
 }
+
 .workSection .borderTop {
     border-top: 1px solid rgba(37, 38, 39, 0.12);
 }
+
 .workSection .workContainer {
     padding: 60px 0;
 }
@@ -246,6 +247,7 @@ body em {
     padding-top: 65px !important;
     transition: .15s linear;
 }
+
 .workSection .workContainer .workDetails .link:hover {
     transform: scale(1.1);
 }
@@ -283,7 +285,7 @@ body em {
 }
 
 .workSection .workContainer .work .imgContaner a:hover {
-    transform: scale(1.1)
+    color: var(--primary-color)
 }
 
 /* App section design */
@@ -322,6 +324,11 @@ body em {
 .workSection .workContainer .agency.work ul li:before {
     content: url(./icons/lightBlueTic.svg);
 }
+
+.workSection .workContainer .breez.agency.work ul li:before {
+    content: url(./icons/graybluetic.svg);
+}
+
 
 .workSection .workContainer .earn.work ul li:before {
     content: url(./icons/purpleTic.svg);
@@ -405,32 +412,40 @@ body em {
 .workSection .workContainer .skitto.agency.work ul li:before {
     content: url(./icons/purpleTic.svg);
 }
+
 .workSection .workContainer .skitto.agency.work .features {
     background-color: var(--purple-color);
 }
+
 .workSection .workContainer .skitto.agency.work .features .featureContent .featureList p:nth-child(2) span {
     color: #FFF300;
 }
+
 .workSection .workContainer .skitto.agency.work .imgContainer {
     padding: 0;
 }
+
 .workSection .workContainer .skitto.agency.work .imgContainer {
     background-color: #EFF2F5;
     max-height: 1120px;
     overflow: hidden;
 
 }
-.workSection .workContainer .skitto.agency.work .imgContainer img{
+
+.workSection .workContainer .skitto.agency.work .imgContainer img {
     filter: drop-shadow(0px 0px 128px rgba(128, 128, 128, 0.2));
- }
+}
+
 /* End Skitto */
 /* start Bd tickets css */
 .workSection .workContainer .bd.work {
     padding: 0;
 }
+
 .workSection .workContainer .bd.skitto.agency.work .imgContainer {
     max-height: 1880px;
 }
+
 /* end Bd tickets css */
 /* Start Earn Css */
 
@@ -440,7 +455,8 @@ body em {
     border-radius: 24px;
 }
 
-.workSection .workContainer .earn.work .earnFeatures .rightBorder,.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
+.workSection .workContainer .earn.work .earnFeatures .rightBorder,
+.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
     border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -486,14 +502,16 @@ body em {
     padding: 50px 20px;
     border-radius: 24px;
 }
-.workSection .workContainer .pypepro.work .pypproFeatures h4{
+
+.workSection .workContainer .pypepro.work .pypproFeatures h4 {
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
     text-align: center;
     color: var(--white-color)
 }
-.workSection .workContainer .pypepro.work .pypproFeatures p{
+
+.workSection .workContainer .pypepro.work .pypproFeatures p {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -503,16 +521,32 @@ body em {
 
 /* End Pyprpo Css */
 
+/* Start Southbreez */
+.workSection .workContainer .breez.work {
+    padding: 0;
+}
+
+.workSection .workContainer .breez.agency.work .imgContainer {
+    background-color: #B1A584;
+}
+
+.workSection .workContainer .breez.work .listContainer {
+    background-color: var(--white-color);
+    padding: 35px 40px;
+    border-radius: 24px;
+    margin: 0.5px 0.5px 40px;
+}
+.workSection .workContainer .breez.work ul li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* End Southbreez */
+
 .workSection .workContainer .agency.work .imgContainer {
     background-color: var(--dark-blue);
     margin-top: 60px;
 }
-.workSection .workContainer .breez.agency.work .imgContainer {
-    background-color: #B1A584;
-}
-.workSection .workContainer .breez.work {
-    padding: 0;
-}
+
 
 .workSection .workContainer .earn.work .imgContainer {
     background-color: var(--purple-color);
@@ -603,6 +637,7 @@ body em {
         float: none;
         padding-top: 20px !important;
     }
+
     .workSection .workContainer .skitto.agency.work .imgContainer {
         max-height: 1600px;
     }
