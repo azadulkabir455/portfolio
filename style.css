@@ -11,7 +11,7 @@
 
 :root {
     --primary-color: #252627;
-    --secondary-color: #FE9800;
+    --secondary-color: #E4BF25;
     --standard-green: #005247;
     --white-dim: rgba(255, 255, 255, 0.80);
     --white-color: #fff;
@@ -244,6 +244,10 @@ body em {
     display: block !important;
     float: right;
     padding-top: 65px !important;
+    transition: .15s linear;
+}
+.workSection .workContainer .workDetails .link:hover {
+    transform: scale(1.1);
 }
 
 .workSection .workContainer .work {
@@ -502,6 +506,12 @@ body em {
 .workSection .workContainer .agency.work .imgContainer {
     background-color: var(--dark-blue);
     margin-top: 60px;
+}
+.workSection .workContainer .breez.agency.work .imgContainer {
+    background-color: #B1A584;
+}
+.workSection .workContainer .breez.work {
+    padding: 0;
 }
 
 .workSection .workContainer .earn.work .imgContainer {
