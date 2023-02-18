@@ -237,19 +237,28 @@ body em {
     padding-top: 50px;
 }
 
-.workSection .workContainer .workDetails .link {
+.workSection .workContainer .workDetails .link, .workHeader a {
     color: var(--link-blue);
     font-size: 14px;
     line-height: 17px;
     font-weight: 600;
     display: block !important;
     float: right;
-    padding-top: 65px !important;
+    margin-top: 65px !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
     transition: .15s linear;
+}
+.workSection .workContainer .workDetails .link.disable {
+    background-color: rgba(37, 38, 39, 0.4);
+    color: var(--white-color);
+    cursor: not-allowed;
 }
 
 .workSection .workContainer .workDetails .link:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .workSection .workContainer .work {
@@ -283,9 +292,16 @@ body em {
     background-color: rgba(250, 250, 250, 1);
     border: 1px solid rgba(37, 38, 39, 0.12);
 }
+.workSection .workContainer .work .imgContaner a.disable {
+    color: rgba(37, 38, 39, 0.4);
+    cursor: not-allowed;
+}
 
 .workSection .workContainer .work .imgContaner a:hover {
     color: var(--primary-color)
+}
+.workSection .workContainer .work .imgContaner a.disable {
+    color: rgba(37, 38, 39, 0.4);
 }
 
 /* App section design */
