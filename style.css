@@ -12,7 +12,7 @@
 :root {
     --primary-color: #252627;
     --secondary-color: #E4BF25;
-    --standard-green: #005247;
+    --standard-green: #253483;
     --white-dim: rgba(255, 255, 255, 0.80);
     --white-color: #fff;
     --link-blue: #087096;
@@ -123,9 +123,9 @@ body em {
 }
 
 .banner .bannerContent p {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
-    line-height: 46px;
+    line-height: 44px;
     color: var(--white-dim);
 }
 
